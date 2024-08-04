@@ -11,7 +11,8 @@
 <meta name="description" content="Personal Tech Blog">
 <meta name="author" content="Imran">
 <link rel="canonical" href="https://ranbook.cloud/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
+<meta name="google-site-verification" content="G-FZT5LNGFY4">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://ranbook.cloud/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://ranbook.cloud/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://ranbook.cloud/favicon-32x32.png">
@@ -78,7 +79,7 @@
   "description": "Personal Tech Blog",
   "thumbnailUrl": "https://ranbook.cloud/favicon.ico",
   "sameAs": [
-      "https://stackoverflow.com/users/5030709/imran", "https://github.com/imran9m"
+      "https://stackoverflow.com/users/5030709/imran", "https://github.com/imran9m", "index.xml"
   ]
 }
 </script>
@@ -150,10 +151,13 @@
 <main class="main"> 
 <article class="first-entry home-info">
     <header class="entry-header">
-        <h1>Hello Visitor</h1>
+        <h1>Hello Visitor from &#x1f30e;</h1>
     </header>
     <div class="entry-content">
-        Welcome to my blog!! &#x1f30d;
+        <p>Welcome to the <strong>Ranbook</strong> 🎉</p>
+<ul>
+<li>This is a space where I will mostly be sharing about my experiences 🙂</li>
+</ul>
     </div>
     <footer class="entry-footer">
         <div class="social-icons" >
@@ -174,9 +178,44 @@
     </path>
 </svg>
     </a>
+    <a href="index.xml" target="_blank" rel="noopener noreferrer me"
+        title="Rss">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+    </a>
 </div>
 
     </footer>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Java8 Alpine Dockerfile Curl
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>As of Alpine Linux 3.3 there exists a new --no-cache option for apk. It allows users to install packages with an index that is updated and used on-the-fly and not cached locally:
+FROM openjdk:8-jre-alpine RUN apk --no-cache add curl This avoids the need to use --update and remove /var/cache/apk/* when done installing packages.
+Reference - https://github.com/gliderlabs/docker-alpine/blob/master/docs/usage.md</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-03 17:27:06 -0400 EDT'>August 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
+  <a class="entry-link" aria-label="post link to Java8 Alpine Dockerfile Curl" href="https://ranbook.cloud/answers/java8-dockerfile-curl/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">First Post
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Testing First Post!!.</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-03 17:55:55 -0400 EDT'>August 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
+  <a class="entry-link" aria-label="post link to First Post" href="https://ranbook.cloud/posts/firstpost/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -204,20 +243,6 @@ AmazonECS client = AmazonECSClientBuilder.standard().build(); DescribeTasksReque
   </div>
   <footer class="entry-footer"><span title='2024-08-03 17:42:19 -0400 EDT'>August 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
   <a class="entry-link" aria-label="post link to Fluentd Multiple Filters Matches for Same Source" href="https://ranbook.cloud/answers/fluentd-filters-matches/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Java8 Alpine Dockerfile Curl
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>As of Alpine Linux 3.3 there exists a new --no-cache option for apk. It allows users to install packages with an index that is updated and used on-the-fly and not cached locally:
-FROM openjdk:8-jre-alpine RUN apk --no-cache add curl This avoids the need to use --update and remove /var/cache/apk/* when done installing packages.
-Reference - https://github.com/gliderlabs/docker-alpine/blob/master/docs/usage.md</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-03 17:27:06 -0400 EDT'>August 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
-  <a class="entry-link" aria-label="post link to Java8 Alpine Dockerfile Curl" href="https://ranbook.cloud/answers/java8-dockerfile-curl/"></a>
 </article>
     </main>
     

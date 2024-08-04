@@ -9,6 +9,15 @@
     <lastBuildDate>Sat, 03 Aug 2024 17:52:55 -0400</lastBuildDate>
     <atom:link href="https://ranbook.cloud/answers/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Java8 Alpine Dockerfile Curl</title>
+      <link>https://ranbook.cloud/answers/java8-dockerfile-curl/</link>
+      <pubDate>Sat, 03 Aug 2024 17:27:06 -0400</pubDate>
+      <guid>https://ranbook.cloud/answers/java8-dockerfile-curl/</guid>
+      <description>As of Alpine Linux 3.3 there exists a new --no-cache option for apk. It allows users to install packages with an index that is updated and used on-the-fly and not cached locally:
+FROM openjdk:8-jre-alpine RUN apk --no-cache add curl This avoids the need to use --update and remove /var/cache/apk/* when done installing packages.
+Reference - https://github.com/gliderlabs/docker-alpine/blob/master/docs/usage.md</description>
+    </item>
+    <item>
       <title>Get PublicIP of ECS Fargate Task with AWS Java SDK</title>
       <link>https://ranbook.cloud/answers/aws-java-sdk-public-ip/</link>
       <pubDate>Sat, 03 Aug 2024 17:52:55 -0400</pubDate>
@@ -24,15 +33,6 @@ AmazonECS client = AmazonECSClientBuilder.standard().build(); DescribeTasksReque
       <guid>https://ranbook.cloud/answers/fluentd-filters-matches/</guid>
       <description>You can try using plugins copy and relabel to achieve this. Example configuration looks like this.
 //One Source &amp;lt;source&amp;gt; @type tail tag service path /tmp/l.log format json read_from_head true &amp;lt;/source&amp;gt; //Now Copy Source Events to 2 Labels &amp;lt;match service&amp;gt; @type copy &amp;lt;store&amp;gt; @type relabel @label @data &amp;lt;/store&amp;gt; &amp;lt;store&amp;gt; @type relabel @label @pi2 &amp;lt;/store&amp;gt; &amp;lt;/match&amp;gt; //@data Label, you can perform desired filter and output file &amp;lt;label @data&amp;gt; &amp;lt;filter service&amp;gt; ... &amp;lt;/filter&amp;gt; &amp;lt;match service&amp;gt; @type file path /tmp/out/data &amp;lt;/match&amp;gt; &amp;lt;/label&amp;gt; //@pi2 Label, you can perform desired filter and output file &amp;lt;label @pi2&amp;gt; &amp;lt;filter service&amp;gt; .</description>
-    </item>
-    <item>
-      <title>Java8 Alpine Dockerfile Curl</title>
-      <link>https://ranbook.cloud/answers/java8-dockerfile-curl/</link>
-      <pubDate>Sat, 03 Aug 2024 17:27:06 -0400</pubDate>
-      <guid>https://ranbook.cloud/answers/java8-dockerfile-curl/</guid>
-      <description>As of Alpine Linux 3.3 there exists a new --no-cache option for apk. It allows users to install packages with an index that is updated and used on-the-fly and not cached locally:
-FROM openjdk:8-jre-alpine RUN apk --no-cache add curl This avoids the need to use --update and remove /var/cache/apk/* when done installing packages.
-Reference - https://github.com/gliderlabs/docker-alpine/blob/master/docs/usage.md</description>
     </item>
   </channel>
 </rss>
