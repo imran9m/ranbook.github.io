@@ -60,6 +60,23 @@ AmazonECS client = AmazonECSClientBuilder.standard().build(); DescribeTasksReque
     </style>
 </noscript>
   
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZT5LNGFY4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-FZT5LNGFY4');
+        }
+      </script>
+    
+  
 
 <meta property="og:title" content="Get PublicIP of ECS Fargate Task with AWS Java SDK" />
 <meta property="og:description" content="You will need to make multiple AWS API calls to get Public IPv4 address. Here are the steps.
