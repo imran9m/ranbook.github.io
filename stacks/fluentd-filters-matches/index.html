@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Fluentd Multiple Filters Matches for Same Source | Ranbook Cloud</title>
-<meta name="keywords" content="">
+<meta name="keywords" content="fluentd, filters, matches, multiple">
 <meta name="description" content="You can try using plugins copy and relabel to achieve this. Example configuration looks like this.
 //One Source &lt;source&gt; @type tail tag service path /tmp/l.log format json read_from_head true &lt;/source&gt; //Now Copy Source Events to 2 Labels &lt;match service&gt; @type copy &lt;store&gt; @type relabel @label @data &lt;/store&gt; &lt;store&gt; @type relabel @label @pi2 &lt;/store&gt; &lt;/match&gt; //@data Label, you can perform desired filter and output file &lt;label @data&gt; &lt;filter service&gt; ... &lt;/filter&gt; &lt;match service&gt; @type file path /tmp/out/data &lt;/match&gt; &lt;/label&gt; //@pi2 Label, you can perform desired filter and output file &lt;label @pi2&gt; &lt;filter service&gt; .">
-<meta name="author" content="">
-<link rel="canonical" href="https://ranbook.cloud/stacks/fluentd-filters-matches/">
+<meta name="author" content="Imran">
+<link rel="canonical" href="http://localhost:1313/stacks/fluentd-filters-matches/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://ranbook.cloud/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://ranbook.cloud/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://ranbook.cloud/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://ranbook.cloud/apple-touch-icon.png">
-<link rel="mask-icon" href="https://ranbook.cloud/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://ranbook.cloud/stacks/fluentd-filters-matches/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/stacks/fluentd-filters-matches/">
 <noscript>
     <style>
         #theme-toggle,
@@ -57,71 +57,6 @@
 
     </style>
 </noscript>
-  
-
-<meta property="og:title" content="Fluentd Multiple Filters Matches for Same Source" />
-<meta property="og:description" content="You can try using plugins copy and relabel to achieve this. Example configuration looks like this.
-//One Source &lt;source&gt; @type tail tag service path /tmp/l.log format json read_from_head true &lt;/source&gt; //Now Copy Source Events to 2 Labels &lt;match service&gt; @type copy &lt;store&gt; @type relabel @label @data &lt;/store&gt; &lt;store&gt; @type relabel @label @pi2 &lt;/store&gt; &lt;/match&gt; //@data Label, you can perform desired filter and output file &lt;label @data&gt; &lt;filter service&gt; ... &lt;/filter&gt; &lt;match service&gt; @type file path /tmp/out/data &lt;/match&gt; &lt;/label&gt; //@pi2 Label, you can perform desired filter and output file &lt;label @pi2&gt; &lt;filter service&gt; ." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://ranbook.cloud/stacks/fluentd-filters-matches/" /><meta property="article:section" content="stacks" />
-<meta property="article:published_time" content="2024-08-03T17:42:19-04:00" />
-<meta property="article:modified_time" content="2024-08-03T17:42:19-04:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Fluentd Multiple Filters Matches for Same Source"/>
-<meta name="twitter:description" content="You can try using plugins copy and relabel to achieve this. Example configuration looks like this.
-//One Source &lt;source&gt; @type tail tag service path /tmp/l.log format json read_from_head true &lt;/source&gt; //Now Copy Source Events to 2 Labels &lt;match service&gt; @type copy &lt;store&gt; @type relabel @label @data &lt;/store&gt; &lt;store&gt; @type relabel @label @pi2 &lt;/store&gt; &lt;/match&gt; //@data Label, you can perform desired filter and output file &lt;label @data&gt; &lt;filter service&gt; ... &lt;/filter&gt; &lt;match service&gt; @type file path /tmp/out/data &lt;/match&gt; &lt;/label&gt; //@pi2 Label, you can perform desired filter and output file &lt;label @pi2&gt; &lt;filter service&gt; ."/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Stacks",
-      "item": "https://ranbook.cloud/stacks/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Fluentd Multiple Filters Matches for Same Source",
-      "item": "https://ranbook.cloud/stacks/fluentd-filters-matches/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Fluentd Multiple Filters Matches for Same Source",
-  "name": "Fluentd Multiple Filters Matches for Same Source",
-  "description": "You can try using plugins copy and relabel to achieve this. Example configuration looks like this.\n//One Source \u0026lt;source\u0026gt; @type tail tag service path /tmp/l.log format json read_from_head true \u0026lt;/source\u0026gt; //Now Copy Source Events to 2 Labels \u0026lt;match service\u0026gt; @type copy \u0026lt;store\u0026gt; @type relabel @label @data \u0026lt;/store\u0026gt; \u0026lt;store\u0026gt; @type relabel @label @pi2 \u0026lt;/store\u0026gt; \u0026lt;/match\u0026gt; //@data Label, you can perform desired filter and output file \u0026lt;label @data\u0026gt; \u0026lt;filter service\u0026gt; ... \u0026lt;/filter\u0026gt; \u0026lt;match service\u0026gt; @type file path /tmp/out/data \u0026lt;/match\u0026gt; \u0026lt;/label\u0026gt; //@pi2 Label, you can perform desired filter and output file \u0026lt;label @pi2\u0026gt; \u0026lt;filter service\u0026gt; .",
-  "keywords": [
-    
-  ],
-  "articleBody": "You can try using plugins copy and relabel to achieve this. Example configuration looks like this.\n//One Source \u003csource\u003e @type tail tag service path /tmp/l.log format json read_from_head true \u003c/source\u003e //Now Copy Source Events to 2 Labels \u003cmatch service\u003e @type copy \u003cstore\u003e @type relabel @label @data \u003c/store\u003e \u003cstore\u003e @type relabel @label @pi2 \u003c/store\u003e \u003c/match\u003e //@data Label, you can perform desired filter and output file \u003clabel @data\u003e \u003cfilter service\u003e ... \u003c/filter\u003e \u003cmatch service\u003e @type file path /tmp/out/data \u003c/match\u003e \u003c/label\u003e //@pi2 Label, you can perform desired filter and output file \u003clabel @pi2\u003e \u003cfilter service\u003e ... \u003c/filter\u003e \u003cmatch service\u003e @type file path /tmp/out/pi \u003c/match\u003e \u003c/label\u003e This Routing examples article has few more ways to do it by re-writing tag etc., but for me I like working with labels and above looks simple.\n",
-  "wordCount" : "129",
-  "inLanguage": "en",
-  "datePublished": "2024-08-03T17:42:19-04:00",
-  "dateModified": "2024-08-03T17:42:19-04:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://ranbook.cloud/stacks/fluentd-filters-matches/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Ranbook Cloud",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://ranbook.cloud/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class="" id="top">
@@ -139,7 +74,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://ranbook.cloud/" accesskey="h" title="Ranbook Cloud (Alt + H)">Ranbook Cloud</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Ranbook Cloud (Alt + H)">Ranbook Cloud</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -165,18 +100,23 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://ranbook.cloud/" title="Home">
+                <a href="http://localhost:1313/" title="Home">
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="https://ranbook.cloud/posts/" title="Posts">
+                <a href="http://localhost:1313/posts" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="https://ranbook.cloud/stacks/" title="Stacks">
-                    <span><i class="fa fa-heart"></i>Stacks</span>
+                <a href="http://localhost:1313/stacks" title="StackOverflow">
+                    <span>StackOverflow</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
                 </a>
             </li>
         </ul>
@@ -190,11 +130,12 @@
     <h1 class="post-title entry-hint-parent">
       Fluentd Multiple Filters Matches for Same Source
     </h1>
-    <div class="post-meta"><span title='2024-08-03 17:42:19 -0400 EDT'>August 3, 2024</span>
+    <div class="post-meta"><span title='2024-08-03 17:42:19 -0400 EDT'>August 3, 2024</span>&nbsp;·&nbsp;Imran
 
 </div>
   </header> 
-  <div class="post-content"><p>You can try using plugins <a href="https://docs.fluentd.org/v1.0/articles/out_copy">copy</a> and <a href="https://docs.fluentd.org/v1.0/articles/out_relabel">relabel</a> to achieve this. Example configuration looks like this.</p>
+  <div class="post-content"><hr>
+<p>You can try using plugins <a href="https://docs.fluentd.org/v1.0/articles/out_copy">copy</a> and <a href="https://docs.fluentd.org/v1.0/articles/out_relabel">relabel</a> to achieve this. Example configuration looks like this.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>//One Source
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">source</span>&gt;
 </span></span><span style="display:flex;"><span>    @type tail
@@ -239,19 +180,24 @@
 </span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">match</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">label</span>&gt;
 </span></span></code></pre></div><p>This <a href="https://docs.fluentd.org/v1.0/articles/routing-examples">Routing</a> examples article has few more ways to do it by re-writing tag etc., but for me I like working with labels and above looks simple.</p>
+<hr>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/fluentd/">Fluentd</a></li>
+      <li><a href="http://localhost:1313/tags/filters/">Filters</a></li>
+      <li><a href="http://localhost:1313/tags/matches/">Matches</a></li>
+      <li><a href="http://localhost:1313/tags/multiple/">Multiple</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://ranbook.cloud/">Ranbook Cloud</a></span> · 
+        <span>&copy; 2024 <a href="http://localhost:1313/">Ranbook Cloud</a></span> · 
 
     <span>
         Powered by

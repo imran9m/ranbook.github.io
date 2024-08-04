@@ -8,8 +8,8 @@
 <meta name="robots" content="index, follow">
 <title>Ranbook Cloud</title>
 
-<meta name="description" content="">
-<meta name="author" content="">
+<meta name="description" content="Personal Tech Blog">
+<meta name="author" content="Imran">
 <link rel="canonical" href="https://ranbook.cloud/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://ranbook.cloud/favicon.ico">
@@ -61,13 +61,13 @@
   
 
 <meta property="og:title" content="Ranbook Cloud" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="Personal Tech Blog" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://ranbook.cloud/" />
+<meta property="og:url" content="https://ranbook.cloud/" /><meta property="og:site_name" content="Ranbook Cloud" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Ranbook Cloud"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="Personal Tech Blog"/>
 
 <script type="application/ld+json">
 {
@@ -75,10 +75,10 @@
   "@type": "Organization",
   "name": "Ranbook Cloud",
   "url": "https://ranbook.cloud/",
-  "description": "",
+  "description": "Personal Tech Blog",
   "thumbnailUrl": "https://ranbook.cloud/favicon.ico",
   "sameAs": [
-      
+      "https://stackoverflow.com/users/5030709/imran", "https://github.com/imran9m"
   ]
 }
 </script>
@@ -130,21 +130,56 @@
                 </a>
             </li>
             <li>
-                <a href="https://ranbook.cloud/posts/" title="Posts">
+                <a href="https://ranbook.cloud/posts" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="https://ranbook.cloud/stacks/" title="Stacks">
-                    <span><i class="fa fa-heart"></i>Stacks</span>
+                <a href="https://ranbook.cloud/answers" title="StackOverflow">
+                    <span>StackOverflow</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ranbook.cloud/tags/" title="Tags">
+                    <span>Tags</span>
                 </a>
             </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>Hello Visitor</h1>
+    </header>
+    <div class="entry-content">
+        Welcome to my blog!! &#x1f30d;
+    </div>
+    <footer class="entry-footer">
+        <div class="social-icons" >
+    <a href="https://stackoverflow.com/users/5030709/imran" target="_blank" rel="noopener noreferrer me"
+        title="Stackoverflow">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M2.913 16.041v6.848h17.599v-6.848M7.16 18.696h8.925M7.65 13.937l8.675 1.8M9.214 9.124l8.058 3.758M12.086 4.65l6.849 5.66M15.774 1.111l5.313 7.162" />
+</svg>
+    </a>
+    <a href="https://github.com/imran9m" target="_blank" rel="noopener noreferrer me"
+        title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+</div>
 
-<article class="first-entry"> 
+    </footer>
+</article>
+
+<article class="post-entry"> 
   <header class="entry-header">
     <h2 class="entry-hint-parent">Get PublicIP of ECS Fargate Task with AWS Java SDK
     </h2>
@@ -154,8 +189,8 @@
 Once you perform taskRun operation. Keep taskFullArn from Output. With above taskArn and cluster name, make describeTasks operation call. Example -
 AmazonECS client = AmazonECSClientBuilder.standard().build(); DescribeTasksRequest request = new DescribeTasksRequest().withTasks(&#34;c5cba4eb-5dad-405e-96db-71ef8eefe6a8&#34;); DescribeTasksResult response = client.describeTasks(request); Above API will give you a response with network attachment details. &#34;attachments&#34;: [ { &#34;id&#34;: &#34;xxxxx-d02c-4a9d-ae79-xxxxxxx&#34;, &#34;type&#34;: &#34;ElasticNetworkInterface&#34;, &#34;status&#34;: &#34;ATTACHED&#34;, &#34;details&#34;: [ { &#34;name&#34;: &#34;subnetId&#34;, &#34;value&#34;: &#34;subnet-xxxxx&#34; }, { &#34;name&#34;: &#34;networkInterfaceId&#34;, &#34;value&#34;: &#34;eni-e5aa89a3&#34; }, { &#34;name&#34;: &#34;macAddress&#34;, &#34;value&#34;: &#34;xxxxx&#34; }, { &#34;name&#34;: &#34;privateIPv4Address&#34;, &#34;value&#34;: &#34;172....</p>
   </div>
-  <footer class="entry-footer"><span title='2024-08-03 17:52:55 -0400 EDT'>August 3, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Get PublicIP of ECS Fargate Task with AWS Java SDK" href="https://ranbook.cloud/stacks/aws-java-sdk-public-ip/"></a>
+  <footer class="entry-footer"><span title='2024-08-03 17:52:55 -0400 EDT'>August 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
+  <a class="entry-link" aria-label="post link to Get PublicIP of ECS Fargate Task with AWS Java SDK" href="https://ranbook.cloud/answers/aws-java-sdk-public-ip/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -167,8 +202,8 @@ AmazonECS client = AmazonECSClientBuilder.standard().build(); DescribeTasksReque
     <p>You can try using plugins copy and relabel to achieve this. Example configuration looks like this.
 //One Source &lt;source&gt; @type tail tag service path /tmp/l.log format json read_from_head true &lt;/source&gt; //Now Copy Source Events to 2 Labels &lt;match service&gt; @type copy &lt;store&gt; @type relabel @label @data &lt;/store&gt; &lt;store&gt; @type relabel @label @pi2 &lt;/store&gt; &lt;/match&gt; //@data Label, you can perform desired filter and output file &lt;label @data&gt; &lt;filter service&gt; ... &lt;/filter&gt; &lt;match service&gt; @type file path /tmp/out/data &lt;/match&gt; &lt;/label&gt; //@pi2 Label, you can perform desired filter and output file &lt;label @pi2&gt; &lt;filter service&gt; ....</p>
   </div>
-  <footer class="entry-footer"><span title='2024-08-03 17:42:19 -0400 EDT'>August 3, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Fluentd Multiple Filters Matches for Same Source" href="https://ranbook.cloud/stacks/fluentd-filters-matches/"></a>
+  <footer class="entry-footer"><span title='2024-08-03 17:42:19 -0400 EDT'>August 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
+  <a class="entry-link" aria-label="post link to Fluentd Multiple Filters Matches for Same Source" href="https://ranbook.cloud/answers/fluentd-filters-matches/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -181,8 +216,8 @@ AmazonECS client = AmazonECSClientBuilder.standard().build(); DescribeTasksReque
 FROM openjdk:8-jre-alpine RUN apk --no-cache add curl This avoids the need to use --update and remove /var/cache/apk/* when done installing packages.
 Reference - https://github.com/gliderlabs/docker-alpine/blob/master/docs/usage.md</p>
   </div>
-  <footer class="entry-footer"><span title='2024-08-03 17:27:06 -0400 EDT'>August 3, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Java8 Alpine Dockerfile Curl" href="https://ranbook.cloud/stacks/java8-dockerfile-curl/"></a>
+  <footer class="entry-footer"><span title='2024-08-03 17:27:06 -0400 EDT'>August 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
+  <a class="entry-link" aria-label="post link to Java8 Alpine Dockerfile Curl" href="https://ranbook.cloud/answers/java8-dockerfile-curl/"></a>
 </article>
     </main>
     

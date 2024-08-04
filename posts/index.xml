@@ -6,14 +6,14 @@
     <description>Recent content in Posts on Ranbook Cloud</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Aug 2024 16:31:13 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 03 Aug 2024 17:55:55 -0400</lastBuildDate>
     <atom:link href="https://ranbook.cloud/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Welcome</title>
-      <link>https://ranbook.cloud/posts/welcome/</link>
-      <pubDate>Sat, 03 Aug 2024 16:31:13 -0400</pubDate>
-      <guid>https://ranbook.cloud/posts/welcome/</guid>
-      <description>Hello there from Ranbook Cloud!!.</description>
+      <title>First Post</title>
+      <link>https://ranbook.cloud/posts/firstpost/</link>
+      <pubDate>Sat, 03 Aug 2024 17:55:55 -0400</pubDate>
+      <guid>https://ranbook.cloud/posts/firstpost/</guid>
+      <description>Testing First Post!!.</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Fluentd on Ranbook Cloud</title>
+    <link>https://ranbook.cloud/tags/fluentd/</link>
+    <description>Recent content in Fluentd on Ranbook Cloud</description>
+    <generator>Hugo -- 0.127.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Aug 2024 17:42:19 -0400</lastBuildDate>
+    <atom:link href="https://ranbook.cloud/tags/fluentd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fluentd Multiple Filters Matches for Same Source</title>
+      <link>https://ranbook.cloud/answers/fluentd-filters-matches/</link>
+      <pubDate>Sat, 03 Aug 2024 17:42:19 -0400</pubDate>
+      <guid>https://ranbook.cloud/answers/fluentd-filters-matches/</guid>
+      <description>You can try using plugins copy and relabel to achieve this. Example configuration looks like this.
+//One Source &amp;lt;source&amp;gt; @type tail tag service path /tmp/l.log format json read_from_head true &amp;lt;/source&amp;gt; //Now Copy Source Events to 2 Labels &amp;lt;match service&amp;gt; @type copy &amp;lt;store&amp;gt; @type relabel @label @data &amp;lt;/store&amp;gt; &amp;lt;store&amp;gt; @type relabel @label @pi2 &amp;lt;/store&amp;gt; &amp;lt;/match&amp;gt; //@data Label, you can perform desired filter and output file &amp;lt;label @data&amp;gt; &amp;lt;filter service&amp;gt; ... &amp;lt;/filter&amp;gt; &amp;lt;match service&amp;gt; @type file path /tmp/out/data &amp;lt;/match&amp;gt; &amp;lt;/label&amp;gt; //@pi2 Label, you can perform desired filter and output file &amp;lt;label @pi2&amp;gt; &amp;lt;filter service&amp;gt; .</description>
+    </item>
+  </channel>
+</rss>

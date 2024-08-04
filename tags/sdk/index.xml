@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sdk on Ranbook Cloud</title>
+    <link>https://ranbook.cloud/tags/sdk/</link>
+    <description>Recent content in Sdk on Ranbook Cloud</description>
+    <generator>Hugo -- 0.127.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Aug 2024 17:52:55 -0400</lastBuildDate>
+    <atom:link href="https://ranbook.cloud/tags/sdk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get PublicIP of ECS Fargate Task with AWS Java SDK</title>
+      <link>https://ranbook.cloud/answers/aws-java-sdk-public-ip/</link>
+      <pubDate>Sat, 03 Aug 2024 17:52:55 -0400</pubDate>
+      <guid>https://ranbook.cloud/answers/aws-java-sdk-public-ip/</guid>
+      <description>You will need to make multiple AWS API calls to get Public IPv4 address. Here are the steps.
+Once you perform taskRun operation. Keep taskFullArn from Output. With above taskArn and cluster name, make describeTasks operation call. Example -
+AmazonECS client = AmazonECSClientBuilder.standard().build(); DescribeTasksRequest request = new DescribeTasksRequest().withTasks(&amp;#34;c5cba4eb-5dad-405e-96db-71ef8eefe6a8&amp;#34;); DescribeTasksResult response = client.describeTasks(request); Above API will give you a response with network attachment details. &amp;#34;attachments&amp;#34;: [ { &amp;#34;id&amp;#34;: &amp;#34;xxxxx-d02c-4a9d-ae79-xxxxxxx&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;ElasticNetworkInterface&amp;#34;, &amp;#34;status&amp;#34;: &amp;#34;ATTACHED&amp;#34;, &amp;#34;details&amp;#34;: [ { &amp;#34;name&amp;#34;: &amp;#34;subnetId&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;subnet-xxxxx&amp;#34; }, { &amp;#34;name&amp;#34;: &amp;#34;networkInterfaceId&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;eni-e5aa89a3&amp;#34; }, { &amp;#34;name&amp;#34;: &amp;#34;macAddress&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;xxxxx&amp;#34; }, { &amp;#34;name&amp;#34;: &amp;#34;privateIPv4Address&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;172.</description>
+    </item>
+  </channel>
+</rss>

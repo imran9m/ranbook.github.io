@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Alpine on Ranbook Cloud</title>
+    <link>https://ranbook.cloud/tags/alpine/</link>
+    <description>Recent content in Alpine on Ranbook Cloud</description>
+    <generator>Hugo -- 0.127.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Aug 2024 17:27:06 -0400</lastBuildDate>
+    <atom:link href="https://ranbook.cloud/tags/alpine/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java8 Alpine Dockerfile Curl</title>
+      <link>https://ranbook.cloud/answers/java8-dockerfile-curl/</link>
+      <pubDate>Sat, 03 Aug 2024 17:27:06 -0400</pubDate>
+      <guid>https://ranbook.cloud/answers/java8-dockerfile-curl/</guid>
+      <description>As of Alpine Linux 3.3 there exists a new --no-cache option for apk. It allows users to install packages with an index that is updated and used on-the-fly and not cached locally:
+FROM openjdk:8-jre-alpine RUN apk --no-cache add curl This avoids the need to use --update and remove /var/cache/apk/* when done installing packages.
+Reference - https://github.com/gliderlabs/docker-alpine/blob/master/docs/usage.md</description>
+    </item>
+  </channel>
+</rss>
