@@ -30,34 +30,6 @@ AmazonECS client = AmazonECSClientBuilder.standard().build(); DescribeTasksReque
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
 </noscript>
   
     
@@ -152,10 +124,6 @@ AmazonECS client = AmazonECSClientBuilder.standard().build(); DescribeTasksReque
 <body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -303,10 +271,10 @@ AmazonECS client = AmazonECSClientBuilder.standard().build(); DescribeTasksReque
       <li><a href="https://ranbook.cloud/tags/publicip/">Publicip</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://ranbook.cloud/posts/firstpost/">
+  <a class="prev" href="https://ranbook.cloud/answers/java8-dockerfile-curl/">
     <span class="title">« Prev</span>
     <br>
-    <span>First Post</span>
+    <span>Java8 Alpine Dockerfile Curl</span>
   </a>
   <a class="next" href="https://ranbook.cloud/answers/fluentd-filters-matches/">
     <span class="title">Next »</span>

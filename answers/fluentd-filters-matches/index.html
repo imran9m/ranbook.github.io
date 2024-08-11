@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Fluentd Multiple Filters Matches for Same Source | Ranbook Cloud</title>
-<meta name="keywords" content="fluentd, filters, matches, multiple">
+<meta name="keywords" content="fluentd, filters, matches">
 <meta name="description" content="You can try using plugins copy and relabel to achieve this. Example configuration looks like this.
 //One Source &lt;source&gt; @type tail tag service path /tmp/l.log format json read_from_head true &lt;/source&gt; //Now Copy Source Events to 2 Labels &lt;match service&gt; @type copy &lt;store&gt; @type relabel @label @data &lt;/store&gt; &lt;store&gt; @type relabel @label @pi2 &lt;/store&gt; &lt;/match&gt; //@data Label, you can perform desired filter and output file &lt;label @data&gt; &lt;filter service&gt; ... &lt;/filter&gt; &lt;match service&gt; @type file path /tmp/out/data &lt;/match&gt; &lt;/label&gt; //@pi2 Label, you can perform desired filter and output file &lt;label @pi2&gt; &lt;filter service&gt; .">
 <meta name="author" content="Imran">
@@ -26,34 +26,6 @@
         #theme-toggle,
         .top-link {
             display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
         }
 
     </style>
@@ -119,7 +91,7 @@
   "name": "Fluentd Multiple Filters Matches for Same Source",
   "description": "You can try using plugins copy and relabel to achieve this. Example configuration looks like this.\n//One Source \u0026lt;source\u0026gt; @type tail tag service path /tmp/l.log format json read_from_head true \u0026lt;/source\u0026gt; //Now Copy Source Events to 2 Labels \u0026lt;match service\u0026gt; @type copy \u0026lt;store\u0026gt; @type relabel @label @data \u0026lt;/store\u0026gt; \u0026lt;store\u0026gt; @type relabel @label @pi2 \u0026lt;/store\u0026gt; \u0026lt;/match\u0026gt; //@data Label, you can perform desired filter and output file \u0026lt;label @data\u0026gt; \u0026lt;filter service\u0026gt; ... \u0026lt;/filter\u0026gt; \u0026lt;match service\u0026gt; @type file path /tmp/out/data \u0026lt;/match\u0026gt; \u0026lt;/label\u0026gt; //@pi2 Label, you can perform desired filter and output file \u0026lt;label @pi2\u0026gt; \u0026lt;filter service\u0026gt; .",
   "keywords": [
-    "fluentd", "filters", "matches", "multiple"
+    "fluentd", "filters", "matches"
   ],
   "articleBody": " You can try using plugins copy and relabel to achieve this. Example configuration looks like this.\n//One Source \u003csource\u003e @type tail tag service path /tmp/l.log format json read_from_head true \u003c/source\u003e //Now Copy Source Events to 2 Labels \u003cmatch service\u003e @type copy \u003cstore\u003e @type relabel @label @data \u003c/store\u003e \u003cstore\u003e @type relabel @label @pi2 \u003c/store\u003e \u003c/match\u003e //@data Label, you can perform desired filter and output file \u003clabel @data\u003e \u003cfilter service\u003e ... \u003c/filter\u003e \u003cmatch service\u003e @type file path /tmp/out/data \u003c/match\u003e \u003c/label\u003e //@pi2 Label, you can perform desired filter and output file \u003clabel @pi2\u003e \u003cfilter service\u003e ... \u003c/filter\u003e \u003cmatch service\u003e @type file path /tmp/out/pi \u003c/match\u003e \u003c/label\u003e This Routing examples article has few more ways to do it by re-writing tag etc., but for me I like working with labels and above looks simple.\n",
   "wordCount" : "129",
@@ -149,10 +121,6 @@
 <body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -277,7 +245,6 @@
       <li><a href="https://ranbook.cloud/tags/fluentd/">Fluentd</a></li>
       <li><a href="https://ranbook.cloud/tags/filters/">Filters</a></li>
       <li><a href="https://ranbook.cloud/tags/matches/">Matches</a></li>
-      <li><a href="https://ranbook.cloud/tags/multiple/">Multiple</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://ranbook.cloud/answers/aws-java-sdk-public-ip/">
@@ -291,7 +258,7 @@
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share Fluentd Multiple Filters Matches for Same Source on x"
-            href="https://x.com/intent/tweet/?text=Fluentd%20Multiple%20Filters%20Matches%20for%20Same%20Source&amp;url=https%3a%2f%2franbook.cloud%2fanswers%2ffluentd-filters-matches%2f&amp;hashtags=fluentd%2cfilters%2cmatches%2cmultiple">
+            href="https://x.com/intent/tweet/?text=Fluentd%20Multiple%20Filters%20Matches%20for%20Same%20Source&amp;url=https%3a%2f%2franbook.cloud%2fanswers%2ffluentd-filters-matches%2f&amp;hashtags=fluentd%2cfilters%2cmatches">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />

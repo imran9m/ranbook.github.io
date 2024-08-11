@@ -6,8 +6,16 @@
     <description>Recent content in Aws on Ranbook Cloud</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Aug 2024 17:52:55 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 10 Aug 2024 17:55:55 -0400</lastBuildDate>
     <atom:link href="https://ranbook.cloud/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS ECS Deployments with Helm Templates</title>
+      <link>https://ranbook.cloud/posts/aws-ecs-helm-charts/</link>
+      <pubDate>Sat, 10 Aug 2024 17:55:55 -0400</pubDate>
+      <guid>https://ranbook.cloud/posts/aws-ecs-helm-charts/</guid>
+      <description>Typically, helm is used for creating deployment charts for kubernetes platform but I like the helm templating features to generate YAML specifications which can be used to deploy to any platform.
+AWS Elastic Container Service(ECS) is another platform where you can run container workloads in AWS Cloud. While I won&amp;rsquo;t go deep into AWS ECS platform or setting up cluster in this article, we will quickly look at how we can deploy a service to an existing ECS cluster with Helm Templates and AWS CLI.</description>
+    </item>
     <item>
       <title>Get PublicIP of ECS Fargate Task with AWS Java SDK</title>
       <link>https://ranbook.cloud/answers/aws-java-sdk-public-ip/</link>
