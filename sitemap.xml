@@ -8,6 +8,36 @@
     <loc>https://ranbook.cloud/answers/java8-dockerfile-curl/</loc>
     <lastmod>2024-08-03T17:27:06-04:00</lastmod>
   </url><url>
+    <loc>https://ranbook.cloud/answers/dotnet-docker-graceful-termination/</loc>
+    <lastmod>2024-08-17T17:27:06-04:00</lastmod>
+  </url><url>
+    <loc>https://ranbook.cloud/tags/.net/</loc>
+    <lastmod>2024-08-17T17:27:06-04:00</lastmod>
+  </url><url>
+    <loc>https://ranbook.cloud/tags/.netcore/</loc>
+    <lastmod>2024-08-17T17:27:06-04:00</lastmod>
+  </url><url>
+    <loc>https://ranbook.cloud/answers/</loc>
+    <lastmod>2024-08-17T17:27:06-04:00</lastmod>
+  </url><url>
+    <loc>https://ranbook.cloud/tags/docker/</loc>
+    <lastmod>2024-08-17T17:27:06-04:00</lastmod>
+  </url><url>
+    <loc>https://ranbook.cloud/tags/dotnet/</loc>
+    <lastmod>2024-08-17T17:27:06-04:00</lastmod>
+  </url><url>
+    <loc>https://ranbook.cloud/tags/dotnetcore/</loc>
+    <lastmod>2024-08-17T17:27:06-04:00</lastmod>
+  </url><url>
+    <loc>https://ranbook.cloud/</loc>
+    <lastmod>2024-08-17T17:27:06-04:00</lastmod>
+  </url><url>
+    <loc>https://ranbook.cloud/tags/sigterm/</loc>
+    <lastmod>2024-08-17T17:27:06-04:00</lastmod>
+  </url><url>
+    <loc>https://ranbook.cloud/tags/</loc>
+    <lastmod>2024-08-17T17:27:06-04:00</lastmod>
+  </url><url>
     <loc>https://ranbook.cloud/tags/aws/</loc>
     <lastmod>2024-08-10T17:55:55-04:00</lastmod>
   </url><url>
@@ -22,15 +52,6 @@
   </url><url>
     <loc>https://ranbook.cloud/posts/</loc>
     <lastmod>2024-08-10T17:55:55-04:00</lastmod>
-  </url><url>
-    <loc>https://ranbook.cloud/</loc>
-    <lastmod>2024-08-10T17:55:55-04:00</lastmod>
-  </url><url>
-    <loc>https://ranbook.cloud/tags/</loc>
-    <lastmod>2024-08-10T17:55:55-04:00</lastmod>
-  </url><url>
-    <loc>https://ranbook.cloud/answers/</loc>
-    <lastmod>2024-08-03T17:52:55-04:00</lastmod>
   </url><url>
     <loc>https://ranbook.cloud/tags/fargate/</loc>
     <lastmod>2024-08-03T17:52:55-04:00</lastmod>
@@ -63,9 +84,6 @@
     <lastmod>2024-08-03T17:27:06-04:00</lastmod>
   </url><url>
     <loc>https://ranbook.cloud/tags/curl/</loc>
-    <lastmod>2024-08-03T17:27:06-04:00</lastmod>
-  </url><url>
-    <loc>https://ranbook.cloud/tags/docker/</loc>
     <lastmod>2024-08-03T17:27:06-04:00</lastmod>
   </url><url>
     <loc>https://ranbook.cloud/categories/</loc>

@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Answers | Ranbook Cloud</title>
+<title>SIGTERM | Ranbook Cloud</title>
 <meta name="keywords" content="">
-<meta name="description" content="Answers - Ranbook Cloud">
+<meta name="description" content="Tech Blog">
 <meta name="author" content="Imran">
-<link rel="canonical" href="https://ranbook.cloud/answers/">
+<link rel="canonical" href="https://ranbook.cloud/tags/sigterm/">
 <meta name="google-site-verification" content="G-FZT5LNGFY4">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://ranbook.cloud/favicon.ico">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="https://ranbook.cloud/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://ranbook.cloud/answers/index.xml">
-<link rel="alternate" hreflang="en" href="https://ranbook.cloud/answers/">
+<link rel="alternate" type="application/rss+xml" href="https://ranbook.cloud/tags/sigterm/index.xml">
+<link rel="alternate" hreflang="en" href="https://ranbook.cloud/tags/sigterm/">
 <noscript>
     <style>
         #theme-toggle,
@@ -49,30 +49,15 @@
     
   
 
-<meta property="og:title" content="Answers" />
+<meta property="og:title" content="SIGTERM" />
 <meta property="og:description" content="Tech Blog" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://ranbook.cloud/answers/" /><meta property="og:site_name" content="Ranbook Cloud" />
+<meta property="og:url" content="https://ranbook.cloud/tags/sigterm/" /><meta property="og:site_name" content="Ranbook Cloud" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Answers"/>
+<meta name="twitter:title" content="SIGTERM"/>
 <meta name="twitter:description" content="Tech Blog"/>
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Answers",
-      "item": "https://ranbook.cloud/answers/"
-    }
-  ]
-}
-</script>
 </head>
 
 <body class="list" id="top">
@@ -123,7 +108,7 @@
             </li>
             <li>
                 <a href="https://ranbook.cloud/answers" title="StackOverflow">
-                    <span class="active">StackOverflow</span>
+                    <span>StackOverflow</span>
                 </a>
             </li>
             <li>
@@ -135,27 +120,13 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://ranbook.cloud/">Home</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://ranbook.cloud/">Home</a>&nbsp;»&nbsp;<a href="https://ranbook.cloud/tags/">Tags</a></div>
   <h1>
-    Answers
+    SIGTERM
   </h1>
 </header>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Java8 Alpine Dockerfile Curl
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>As of Alpine Linux 3.3 there exists a new --no-cache option for apk. It allows users to install packages with an index that is updated and used on-the-fly and not cached locally:
-FROM openjdk:8-jre-alpine RUN apk --no-cache add curl This avoids the need to use --update and remove /var/cache/apk/* when done installing packages.
-Reference - https://github.com/gliderlabs/docker-alpine/blob/master/docs/usage.md</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-03 17:27:06 -0400 EDT'>August 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
-  <a class="entry-link" aria-label="post link to Java8 Alpine Dockerfile Curl" href="https://ranbook.cloud/answers/java8-dockerfile-curl/"></a>
-</article>
-
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
     <h2 class="entry-hint-parent">Gracefully Handle DotNetCore Docker Container Termination
     </h2>
@@ -167,33 +138,6 @@ Waiting for signals Unloding fired Received signal gracefully shutting down Hell
   </div>
   <footer class="entry-footer"><span title='2024-08-17 17:27:06 -0400 EDT'>August 17, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
   <a class="entry-link" aria-label="post link to Gracefully Handle DotNetCore Docker Container Termination" href="https://ranbook.cloud/answers/dotnet-docker-graceful-termination/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Get PublicIP of ECS Fargate Task with AWS Java SDK
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>You will need to make multiple AWS API calls to get Public IPv4 address. Here are the steps.
-Once you perform taskRun operation. Keep taskFullArn from Output. With above taskArn and cluster name, make describeTasks operation call. Example -
-AmazonECS client = AmazonECSClientBuilder.standard().build(); DescribeTasksRequest request = new DescribeTasksRequest().withTasks(&#34;c5cba4eb-5dad-405e-96db-71ef8eefe6a8&#34;); DescribeTasksResult response = client.describeTasks(request); Above API will give you a response with network attachment details. &#34;attachments&#34;: [ { &#34;id&#34;: &#34;xxxxx-d02c-4a9d-ae79-xxxxxxx&#34;, &#34;type&#34;: &#34;ElasticNetworkInterface&#34;, &#34;status&#34;: &#34;ATTACHED&#34;, &#34;details&#34;: [ { &#34;name&#34;: &#34;subnetId&#34;, &#34;value&#34;: &#34;subnet-xxxxx&#34; }, { &#34;name&#34;: &#34;networkInterfaceId&#34;, &#34;value&#34;: &#34;eni-e5aa89a3&#34; }, { &#34;name&#34;: &#34;macAddress&#34;, &#34;value&#34;: &#34;xxxxx&#34; }, { &#34;name&#34;: &#34;privateIPv4Address&#34;, &#34;value&#34;: &#34;172....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-03 17:52:55 -0400 EDT'>August 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
-  <a class="entry-link" aria-label="post link to Get PublicIP of ECS Fargate Task with AWS Java SDK" href="https://ranbook.cloud/answers/aws-java-sdk-public-ip/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Fluentd Multiple Filters Matches for Same Source
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>You can try using plugins copy and relabel to achieve this. Example configuration looks like this.
-//One Source &lt;source&gt; @type tail tag service path /tmp/l.log format json read_from_head true &lt;/source&gt; //Now Copy Source Events to 2 Labels &lt;match service&gt; @type copy &lt;store&gt; @type relabel @label @data &lt;/store&gt; &lt;store&gt; @type relabel @label @pi2 &lt;/store&gt; &lt;/match&gt; //@data Label, you can perform desired filter and output file &lt;label @data&gt; &lt;filter service&gt; ... &lt;/filter&gt; &lt;match service&gt; @type file path /tmp/out/data &lt;/match&gt; &lt;/label&gt; //@pi2 Label, you can perform desired filter and output file &lt;label @pi2&gt; &lt;filter service&gt; ....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-03 17:42:19 -0400 EDT'>August 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
-  <a class="entry-link" aria-label="post link to Fluentd Multiple Filters Matches for Same Source" href="https://ranbook.cloud/answers/fluentd-filters-matches/"></a>
 </article>
     </main>
     

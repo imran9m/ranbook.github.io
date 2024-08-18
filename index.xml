@@ -6,7 +6,7 @@
     <description>Recent content on Ranbook Cloud</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Aug 2024 17:55:55 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 17 Aug 2024 17:27:06 -0400</lastBuildDate>
     <atom:link href="https://ranbook.cloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS ECS Deployments with Helm Templates</title>
@@ -24,6 +24,15 @@ AWS Elastic Container Service(ECS) is another platform where you can run contain
       <description>As of Alpine Linux 3.3 there exists a new --no-cache option for apk. It allows users to install packages with an index that is updated and used on-the-fly and not cached locally:
 FROM openjdk:8-jre-alpine RUN apk --no-cache add curl This avoids the need to use --update and remove /var/cache/apk/* when done installing packages.
 Reference - https://github.com/gliderlabs/docker-alpine/blob/master/docs/usage.md</description>
+    </item>
+    <item>
+      <title>Gracefully Handle DotNetCore Docker Container Termination</title>
+      <link>https://ranbook.cloud/answers/dotnet-docker-graceful-termination/</link>
+      <pubDate>Sat, 17 Aug 2024 17:27:06 -0400</pubDate>
+      <guid>https://ranbook.cloud/answers/dotnet-docker-graceful-termination/</guid>
+      <description>Inorder to gracefully stop a .NET Core Docker Container, below is the sample console app code.
+using System; using System.Runtime.Loader; using System.Threading; namespace consoleapp { class Program { static void Main(string[] args) { var _quitEvent = new ManualResetEvent(false); AssemblyLoadContext.Default.Unloading += ctx =&amp;gt; { System.Console.WriteLine(&amp;#34;Unloding fired&amp;#34;); _quitEvent.Set(); }; System.Console.WriteLine(&amp;#34;Waiting for signals&amp;#34;); _quitEvent.WaitOne(); System.Console.WriteLine(&amp;#34;Received signal gracefully shutting down&amp;#34;); Console.WriteLine(&amp;#34;Hello World!&amp;#34;); } } } Sample Logs you should see for container.
+Waiting for signals Unloding fired Received signal gracefully shutting down Hello World!</description>
     </item>
     <item>
       <title>Get PublicIP of ECS Fargate Task with AWS Java SDK</title>
