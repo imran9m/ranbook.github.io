@@ -6,7 +6,7 @@
     <description>Recent content in Answers on Ranbook Cloud</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Aug 2024 17:27:06 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 18 Nov 2024 17:42:19 -0400</lastBuildDate>
     <atom:link href="https://ranbook.cloud/answers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java8 Alpine Dockerfile Curl</title>
@@ -18,13 +18,13 @@ FROM openjdk:8-jre-alpine RUN apk --no-cache add curl This avoids the need to us
 Reference - https://github.com/gliderlabs/docker-alpine/blob/master/docs/usage.md</description>
     </item>
     <item>
-      <title>Gracefully Handle DotNetCore Docker Container Termination</title>
-      <link>https://ranbook.cloud/answers/dotnet-docker-graceful-termination/</link>
-      <pubDate>Sat, 17 Aug 2024 17:27:06 -0400</pubDate>
-      <guid>https://ranbook.cloud/answers/dotnet-docker-graceful-termination/</guid>
-      <description>Inorder to gracefully stop a .NET Core Docker Container, below is the sample console app code.
-using System; using System.Runtime.Loader; using System.Threading; namespace consoleapp { class Program { static void Main(string[] args) { var _quitEvent = new ManualResetEvent(false); AssemblyLoadContext.Default.Unloading += ctx =&amp;gt; { System.Console.WriteLine(&amp;#34;Unloding fired&amp;#34;); _quitEvent.Set(); }; System.Console.WriteLine(&amp;#34;Waiting for signals&amp;#34;); _quitEvent.WaitOne(); System.Console.WriteLine(&amp;#34;Received signal gracefully shutting down&amp;#34;); Console.WriteLine(&amp;#34;Hello World!&amp;#34;); } } } Sample Logs you should see for container.
-Waiting for signals Unloding fired Received signal gracefully shutting down Hello World!</description>
+      <title>Fluentd Conditional Matches Based on Environment Variables</title>
+      <link>https://ranbook.cloud/answers/fluentd-conditional-matches/</link>
+      <pubDate>Mon, 18 Nov 2024 17:42:19 -0400</pubDate>
+      <guid>https://ranbook.cloud/answers/fluentd-conditional-matches/</guid>
+      <description>You can enable/disable FluentD Matches with environment variables in following way.
+Below is fluent.conf.
+&amp;lt;source&amp;gt; @type dummy dummy {&amp;#34;hello&amp;#34;:&amp;#34;world&amp;#34;} @label @DUMMY tag dummy &amp;lt;/source&amp;gt; &amp;lt;label @DUMMY&amp;gt; &amp;lt;match dummy&amp;gt; @type copy copy_mode deep &amp;lt;store&amp;gt; @type relabel @label @OPENSEARCH &amp;lt;/store&amp;gt; &amp;lt;store&amp;gt; @type relabel @label @ELASTICSEARCH &amp;lt;/store&amp;gt; &amp;lt;/match&amp;gt; &amp;lt;/label&amp;gt; &amp;lt;label @OPENSEARCH&amp;gt; @include &amp;#34;#{ENV[&amp;#39;FLUENTD_OPENSEARCH&amp;#39;]}&amp;#34; &amp;lt;/label&amp;gt; &amp;lt;label @ELASTICSEARCH&amp;gt; @include &amp;#34;#{ENV[&amp;#39;FLUENTD_ELASTICSEARCH&amp;#39;]}&amp;#34; &amp;lt;/label&amp;gt; Following is the content for fluent-elasticsearch.conf. For testing purpose, we will send events to stdout.</description>
     </item>
     <item>
       <title>Get PublicIP of ECS Fargate Task with AWS Java SDK</title>

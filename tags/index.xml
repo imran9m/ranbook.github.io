@@ -6,48 +6,27 @@
     <description>Recent content in Tags on Ranbook Cloud</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Aug 2024 17:27:06 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 18 Nov 2024 17:42:19 -0400</lastBuildDate>
     <atom:link href="https://ranbook.cloud/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>.Net</title>
-      <link>https://ranbook.cloud/tags/.net/</link>
+      <title>Conditional</title>
+      <link>https://ranbook.cloud/tags/conditional/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ranbook.cloud/tags/.net/</guid>
+      <guid>https://ranbook.cloud/tags/conditional/</guid>
       <description></description>
     </item>
     <item>
-      <title>.Netcore</title>
-      <link>https://ranbook.cloud/tags/.netcore/</link>
+      <title>Fluentd</title>
+      <link>https://ranbook.cloud/tags/fluentd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ranbook.cloud/tags/.netcore/</guid>
+      <guid>https://ranbook.cloud/tags/fluentd/</guid>
       <description></description>
     </item>
     <item>
-      <title>Docker</title>
-      <link>https://ranbook.cloud/tags/docker/</link>
+      <title>Matches</title>
+      <link>https://ranbook.cloud/tags/matches/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ranbook.cloud/tags/docker/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dotnet</title>
-      <link>https://ranbook.cloud/tags/dotnet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ranbook.cloud/tags/dotnet/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dotnetcore</title>
-      <link>https://ranbook.cloud/tags/dotnetcore/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ranbook.cloud/tags/dotnetcore/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SIGTERM</title>
-      <link>https://ranbook.cloud/tags/sigterm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ranbook.cloud/tags/sigterm/</guid>
+      <guid>https://ranbook.cloud/tags/matches/</guid>
       <description></description>
     </item>
     <item>
@@ -114,20 +93,6 @@
       <description></description>
     </item>
     <item>
-      <title>Fluentd</title>
-      <link>https://ranbook.cloud/tags/fluentd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ranbook.cloud/tags/fluentd/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Matches</title>
-      <link>https://ranbook.cloud/tags/matches/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ranbook.cloud/tags/matches/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Alpine</title>
       <link>https://ranbook.cloud/tags/alpine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -139,6 +104,13 @@
       <link>https://ranbook.cloud/tags/curl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ranbook.cloud/tags/curl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>https://ranbook.cloud/tags/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/docker/</guid>
       <description></description>
     </item>
   </channel>

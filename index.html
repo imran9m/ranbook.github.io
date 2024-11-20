@@ -208,16 +208,16 @@ Reference - https://github.com/gliderlabs/docker-alpine/blob/master/docs/usage.m
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Gracefully Handle DotNetCore Docker Container Termination
+    <h2 class="entry-hint-parent">Fluentd Conditional Matches Based on Environment Variables
     </h2>
   </header>
   <div class="entry-content">
-    <p>Inorder to gracefully stop a .NET Core Docker Container, below is the sample console app code.
-using System; using System.Runtime.Loader; using System.Threading; namespace consoleapp { class Program { static void Main(string[] args) { var _quitEvent = new ManualResetEvent(false); AssemblyLoadContext.Default.Unloading &#43;= ctx =&gt; { System.Console.WriteLine(&#34;Unloding fired&#34;); _quitEvent.Set(); }; System.Console.WriteLine(&#34;Waiting for signals&#34;); _quitEvent.WaitOne(); System.Console.WriteLine(&#34;Received signal gracefully shutting down&#34;); Console.WriteLine(&#34;Hello World!&#34;); } } } Sample Logs you should see for container.
-Waiting for signals Unloding fired Received signal gracefully shutting down Hello World!...</p>
+    <p>You can enable/disable FluentD Matches with environment variables in following way.
+Below is fluent.conf.
+&lt;source&gt; @type dummy dummy {&#34;hello&#34;:&#34;world&#34;} @label @DUMMY tag dummy &lt;/source&gt; &lt;label @DUMMY&gt; &lt;match dummy&gt; @type copy copy_mode deep &lt;store&gt; @type relabel @label @OPENSEARCH &lt;/store&gt; &lt;store&gt; @type relabel @label @ELASTICSEARCH &lt;/store&gt; &lt;/match&gt; &lt;/label&gt; &lt;label @OPENSEARCH&gt; @include &#34;#{ENV[&#39;FLUENTD_OPENSEARCH&#39;]}&#34; &lt;/label&gt; &lt;label @ELASTICSEARCH&gt; @include &#34;#{ENV[&#39;FLUENTD_ELASTICSEARCH&#39;]}&#34; &lt;/label&gt; Following is the content for fluent-elasticsearch.conf. For testing purpose, we will send events to stdout....</p>
   </div>
-  <footer class="entry-footer"><span title='2024-08-17 17:27:06 -0400 EDT'>August 17, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
-  <a class="entry-link" aria-label="post link to Gracefully Handle DotNetCore Docker Container Termination" href="https://ranbook.cloud/answers/dotnet-docker-graceful-termination/"></a>
+  <footer class="entry-footer"><span title='2024-11-18 17:42:19 -0400 -0400'>November 18, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
+  <a class="entry-link" aria-label="post link to Fluentd Conditional Matches Based on Environment Variables" href="https://ranbook.cloud/answers/fluentd-conditional-matches/"></a>
 </article>
 
 <article class="post-entry"> 

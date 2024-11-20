@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Categories | Ranbook Cloud</title>
+<title>Conditional | Ranbook Cloud</title>
 <meta name="keywords" content="">
 <meta name="description" content="Tech Blog">
 <meta name="author" content="Imran">
-<link rel="canonical" href="https://ranbook.cloud/categories/">
+<link rel="canonical" href="https://ranbook.cloud/tags/conditional/">
 <meta name="google-site-verification" content="G-FZT5LNGFY4">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://ranbook.cloud/favicon.ico">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="https://ranbook.cloud/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://ranbook.cloud/categories/index.xml">
-<link rel="alternate" hreflang="en" href="https://ranbook.cloud/categories/">
+<link rel="alternate" type="application/rss+xml" href="https://ranbook.cloud/tags/conditional/index.xml">
+<link rel="alternate" hreflang="en" href="https://ranbook.cloud/tags/conditional/">
 <noscript>
     <style>
         #theme-toggle,
@@ -49,13 +49,13 @@
     
   
 
-<meta property="og:title" content="Categories" />
+<meta property="og:title" content="Conditional" />
 <meta property="og:description" content="Tech Blog" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://ranbook.cloud/categories/" /><meta property="og:site_name" content="Ranbook Cloud" />
+<meta property="og:url" content="https://ranbook.cloud/tags/conditional/" /><meta property="og:site_name" content="Ranbook Cloud" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Categories"/>
+<meta name="twitter:title" content="Conditional"/>
 <meta name="twitter:description" content="Tech Blog"/>
 
 </head>
@@ -119,13 +119,26 @@
         </ul>
     </nav>
 </header>
-<main class="main">
-<header class="page-header">
-    <h1>Categories</h1>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://ranbook.cloud/">Home</a>&nbsp;»&nbsp;<a href="https://ranbook.cloud/tags/">Tags</a></div>
+  <h1>
+    Conditional
+  </h1>
 </header>
 
-<ul class="terms-tags">
-</ul>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Fluentd Conditional Matches Based on Environment Variables
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>You can enable/disable FluentD Matches with environment variables in following way.
+Below is fluent.conf.
+&lt;source&gt; @type dummy dummy {&#34;hello&#34;:&#34;world&#34;} @label @DUMMY tag dummy &lt;/source&gt; &lt;label @DUMMY&gt; &lt;match dummy&gt; @type copy copy_mode deep &lt;store&gt; @type relabel @label @OPENSEARCH &lt;/store&gt; &lt;store&gt; @type relabel @label @ELASTICSEARCH &lt;/store&gt; &lt;/match&gt; &lt;/label&gt; &lt;label @OPENSEARCH&gt; @include &#34;#{ENV[&#39;FLUENTD_OPENSEARCH&#39;]}&#34; &lt;/label&gt; &lt;label @ELASTICSEARCH&gt; @include &#34;#{ENV[&#39;FLUENTD_ELASTICSEARCH&#39;]}&#34; &lt;/label&gt; Following is the content for fluent-elasticsearch.conf. For testing purpose, we will send events to stdout....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-11-18 17:42:19 -0400 -0400'>November 18, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
+  <a class="entry-link" aria-label="post link to Fluentd Conditional Matches Based on Environment Variables" href="https://ranbook.cloud/answers/fluentd-conditional-matches/"></a>
+</article>
     </main>
     
 <footer class="footer">
