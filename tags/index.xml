@@ -6,8 +6,57 @@
     <description>Recent content in Tags on Ranbook Cloud</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Nov 2024 17:42:19 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 28 Nov 2024 17:55:55 -0400</lastBuildDate>
     <atom:link href="https://ranbook.cloud/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bandit</title>
+      <link>https://ranbook.cloud/tags/bandit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/bandit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Code</title>
+      <link>https://ranbook.cloud/tags/code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coverage</title>
+      <link>https://ranbook.cloud/tags/coverage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/coverage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pylint</title>
+      <link>https://ranbook.cloud/tags/pylint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/pylint/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pytest</title>
+      <link>https://ranbook.cloud/tags/pytest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/pytest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://ranbook.cloud/tags/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sonarqube</title>
+      <link>https://ranbook.cloud/tags/sonarqube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/sonarqube/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Conditional</title>
       <link>https://ranbook.cloud/tags/conditional/</link>

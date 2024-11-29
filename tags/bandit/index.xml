@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Ranbook Cloud</title>
-    <link>https://ranbook.cloud/posts/</link>
-    <description>Recent content in Posts on Ranbook Cloud</description>
+    <title>Bandit on Ranbook Cloud</title>
+    <link>https://ranbook.cloud/tags/bandit/</link>
+    <description>Recent content in Bandit on Ranbook Cloud</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Nov 2024 17:55:55 -0400</lastBuildDate>
-    <atom:link href="https://ranbook.cloud/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ranbook.cloud/tags/bandit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python Sonarqube Code Coverage &amp; Quality</title>
       <link>https://ranbook.cloud/posts/python-sonarqube-coverage-tests/</link>
@@ -16,14 +16,6 @@
       <description>In this article, we will look at how to run pylint, bandit, pytest and coverage utilities to generate and upload code coverage, quality reports to SonarQube server.
 Required Software Docker: To run SonarQube and SonarQube CLI containers. Python3 pip3: To install required dependencies. Python3.x-venv: Optional but recommended. SonarQube Setup Run following commands to bring SonarQube Docker.
 Let’s create docker network first so our Sonar CLI container can interact with SonarQube Server.</description>
-    </item>
-    <item>
-      <title>AWS ECS Deployments with Helm Templates</title>
-      <link>https://ranbook.cloud/posts/aws-ecs-helm-charts/</link>
-      <pubDate>Sat, 10 Aug 2024 17:55:55 -0400</pubDate>
-      <guid>https://ranbook.cloud/posts/aws-ecs-helm-charts/</guid>
-      <description>Typically, helm is used for creating deployment charts for kubernetes platform but I like the helm templating features to generate YAML specifications which can be used to deploy to any platform.
-AWS Elastic Container Service(ECS) is another platform where you can run container workloads in AWS Cloud. While I won&amp;rsquo;t go deep into AWS ECS platform or setting up cluster in this article, we will quickly look at how we can deploy a service to an existing ECS cluster with Helm Templates and AWS CLI.</description>
     </item>
   </channel>
 </rss>
