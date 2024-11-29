@@ -29,6 +29,34 @@
         }
 
     </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
 </noscript>
   
     
@@ -78,6 +106,10 @@
 <body class="list" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -145,7 +177,7 @@
 <figure class="entry-cover"><img loading="lazy" src="https://ranbook.cloud/img/pexels-andrejcook-131723.jpg" alt="">
 </figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Python Sonarqube Code Coverage &amp; Quality
+    <h2 class="entry-hint-parent">Python SonarQube Code Coverage &amp; Quality
     </h2>
   </header>
   <div class="entry-content">
@@ -154,7 +186,7 @@ Required Software Docker: To run SonarQube and SonarQube CLI containers. Python3
 Let’s create docker network first so our Sonar CLI container can interact with SonarQube Server....</p>
   </div>
   <footer class="entry-footer"><span title='2024-11-28 17:55:55 -0400 -0400'>November 28, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Imran</footer>
-  <a class="entry-link" aria-label="post link to Python Sonarqube Code Coverage &amp; Quality" href="https://ranbook.cloud/posts/python-sonarqube-coverage-tests/"></a>
+  <a class="entry-link" aria-label="post link to Python SonarQube Code Coverage &amp; Quality" href="https://ranbook.cloud/posts/python-sonarqube-coverage-tests/"></a>
 </article>
 
 <article class="post-entry"> 

@@ -6,8 +6,17 @@
     <description>Recent content in Docker on Ranbook Cloud</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Aug 2024 17:27:06 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 28 Nov 2024 17:55:55 -0400</lastBuildDate>
     <atom:link href="https://ranbook.cloud/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python SonarQube Code Coverage &amp; Quality</title>
+      <link>https://ranbook.cloud/posts/python-sonarqube-coverage-tests/</link>
+      <pubDate>Thu, 28 Nov 2024 17:55:55 -0400</pubDate>
+      <guid>https://ranbook.cloud/posts/python-sonarqube-coverage-tests/</guid>
+      <description>In this article, we will look at how to run pylint, bandit, pytest and coverage utilities to generate and upload code coverage, quality reports to SonarQube server.
+Required Software Docker: To run SonarQube and SonarQube CLI containers. Python3 pip3: To install required dependencies. Python3.x-venv: Optional but recommended. SonarQube Setup Run following commands to bring SonarQube Docker.
+Let’s create docker network first so our Sonar CLI container can interact with SonarQube Server.</description>
+    </item>
     <item>
       <title>Java8 Alpine Dockerfile Curl</title>
       <link>https://ranbook.cloud/answers/java8-dockerfile-curl/</link>
