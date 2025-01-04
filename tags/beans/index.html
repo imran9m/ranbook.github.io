@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Java | Ranbook Cloud</title>
+<title>Beans | Ranbook Cloud</title>
 <meta name="keywords" content="">
 <meta name="description" content="Tech Blog">
 <meta name="author" content="Imran">
-<link rel="canonical" href="https://ranbook.cloud/tags/java/">
+<link rel="canonical" href="https://ranbook.cloud/tags/beans/">
 <meta name="google-site-verification" content="G-FZT5LNGFY4">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://ranbook.cloud/favicon.ico">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="https://ranbook.cloud/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://ranbook.cloud/tags/java/index.xml">
-<link rel="alternate" hreflang="en" href="https://ranbook.cloud/tags/java/">
+<link rel="alternate" type="application/rss+xml" href="https://ranbook.cloud/tags/beans/index.xml">
+<link rel="alternate" hreflang="en" href="https://ranbook.cloud/tags/beans/">
 <noscript>
     <style>
         #theme-toggle,
@@ -77,13 +77,13 @@
     
   
 
-<meta property="og:title" content="Java" />
+<meta property="og:title" content="Beans" />
 <meta property="og:description" content="Tech Blog" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://ranbook.cloud/tags/java/" /><meta property="og:site_name" content="Ranbook Cloud" />
+<meta property="og:url" content="https://ranbook.cloud/tags/beans/" /><meta property="og:site_name" content="Ranbook Cloud" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Java"/>
+<meta name="twitter:title" content="Beans"/>
 <meta name="twitter:description" content="Tech Blog"/>
 
 </head>
@@ -154,23 +154,9 @@
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="https://ranbook.cloud/">Home</a>&nbsp;»&nbsp;<a href="https://ranbook.cloud/tags/">Tags</a></div>
   <h1>
-    Java
+    Beans
   </h1>
 </header>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Java8 Alpine Dockerfile Curl
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>As of Alpine Linux 3.3 there exists a new --no-cache option for apk. It allows users to install packages with an index that is updated and used on-the-fly and not cached locally:
-FROM openjdk:8-jre-alpine RUN apk --no-cache add curl This avoids the need to use --update and remove /var/cache/apk/* when done installing packages.
-Reference - https://github.com/gliderlabs/docker-alpine/blob/master/docs/usage.md</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-03 17:27:06 -0400 EDT'>August 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
-  <a class="entry-link" aria-label="post link to Java8 Alpine Dockerfile Curl" href="https://ranbook.cloud/answers/java8-dockerfile-curl/"></a>
-</article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
@@ -186,20 +172,6 @@ restClients: clients: - clientName: test1 connectionTimeout: 6000 responseTimeou
   </div>
   <footer class="entry-footer"><span title='2025-01-02 17:52:55 -0400 -0400'>January 2, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Imran</footer>
   <a class="entry-link" aria-label="post link to Spring Boot Dynamic Beans Example" href="https://ranbook.cloud/answers/spring-boot-dynamic-beans/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Get PublicIP of ECS Fargate Task with AWS Java SDK
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>You will need to make multiple AWS API calls to get Public IPv4 address. Here are the steps.
-Once you perform taskRun operation. Keep taskFullArn from Output. With above taskArn and cluster name, make describeTasks operation call. Example -
-AmazonECS client = AmazonECSClientBuilder.standard().build(); DescribeTasksRequest request = new DescribeTasksRequest().withTasks(&#34;c5cba4eb-5dad-405e-96db-71ef8eefe6a8&#34;); DescribeTasksResult response = client.describeTasks(request); Above API will give you a response with network attachment details. &#34;attachments&#34;: [ { &#34;id&#34;: &#34;xxxxx-d02c-4a9d-ae79-xxxxxxx&#34;, &#34;type&#34;: &#34;ElasticNetworkInterface&#34;, &#34;status&#34;: &#34;ATTACHED&#34;, &#34;details&#34;: [ { &#34;name&#34;: &#34;subnetId&#34;, &#34;value&#34;: &#34;subnet-xxxxx&#34; }, { &#34;name&#34;: &#34;networkInterfaceId&#34;, &#34;value&#34;: &#34;eni-e5aa89a3&#34; }, { &#34;name&#34;: &#34;macAddress&#34;, &#34;value&#34;: &#34;xxxxx&#34; }, { &#34;name&#34;: &#34;privateIPv4Address&#34;, &#34;value&#34;: &#34;172....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-03 17:52:55 -0400 EDT'>August 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
-  <a class="entry-link" aria-label="post link to Get PublicIP of ECS Fargate Task with AWS Java SDK" href="https://ranbook.cloud/answers/aws-java-sdk-public-ip/"></a>
 </article>
     </main>
     

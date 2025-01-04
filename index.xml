@@ -6,7 +6,7 @@
     <description>Recent content on Ranbook Cloud</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Nov 2024 17:55:55 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2025 17:52:55 -0400</lastBuildDate>
     <atom:link href="https://ranbook.cloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python SonarQube Code Coverage &amp; Quality</title>
@@ -33,6 +33,17 @@ AWS Elastic Container Service(ECS) is another platform where you can run contain
       <description>As of Alpine Linux 3.3 there exists a new --no-cache option for apk. It allows users to install packages with an index that is updated and used on-the-fly and not cached locally:
 FROM openjdk:8-jre-alpine RUN apk --no-cache add curl This avoids the need to use --update and remove /var/cache/apk/* when done installing packages.
 Reference - https://github.com/gliderlabs/docker-alpine/blob/master/docs/usage.md</description>
+    </item>
+    <item>
+      <title>Spring Boot Dynamic Beans Example</title>
+      <link>https://ranbook.cloud/answers/spring-boot-dynamic-beans/</link>
+      <pubDate>Thu, 02 Jan 2025 17:52:55 -0400</pubDate>
+      <guid>https://ranbook.cloud/answers/spring-boot-dynamic-beans/</guid>
+      <description>You can create dynamic &amp;amp; configuration driven beans in Spring Boot in following way.
+Note: Below example full code is available at https://github.com/imran9m/spring-boot-dynamic-beans
+For the example, Let&amp;rsquo;s create dynamic RestClient beans with custamized connection timeout and user-agent configuration to use anywhere we want.
+Let&amp;rsquo;s go with following configuration to manager properties for dynamic beans with customaized properties. We will create 2 RestClient objects for now. application.yml
+restClients: clients: - clientName: test1 connectionTimeout: 6000 responseTimeout: 6000 userAgent: test1 - clientName: test2 connectionTimeout: 5000 responseTimeout: 5000 userAgent: test2 Now, let&amp;rsquo;s load this configuration into custom configuration properties record.</description>
     </item>
     <item>
       <title>Fluentd Conditional Matches Based on Environment Variables</title>
