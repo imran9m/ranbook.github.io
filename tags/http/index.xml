@@ -6,15 +6,15 @@
     <description>Recent content in Http on Ranbook Cloud</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Feb 2025 17:55:55 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2025 17:55:55 -0400</lastBuildDate>
     <atom:link href="https://ranbook.cloud/tags/http/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ASP.NET Core WebAPI Payload Logging with Serilog</title>
       <link>https://ranbook.cloud/posts/serilog-http-payload-logging/</link>
-      <pubDate>Sat, 22 Feb 2025 17:55:55 -0400</pubDate>
+      <pubDate>Sun, 23 Feb 2025 17:55:55 -0400</pubDate>
       <guid>https://ranbook.cloud/posts/serilog-http-payload-logging/</guid>
-      <description>Goal: In this article, we will look at how to log HTTP API request/response payloads in an ASP.NET Core Web API using the Serilog logger and the HTTP Logging Middleware provided by Microsoft.
-Why: In some API-based applications, logging the payload for a given API transaction is helpful from both audit and monitoring perspectives. While it&amp;rsquo;s generally not recommended to log the request or response body due to performance considerations, if there is a need for such a requirement and you understand the risks, then hopefully this guide provides one of the many ways to achieve it.</description>
+      <description>What Imagine debugging a tricky API integration where you&amp;rsquo;re getting intermittent errors. You suspect the data being sent is the culprit, but you&amp;rsquo;re flying blind. Wouldn&amp;rsquo;t it be great if you could see exactly what&amp;rsquo;s going over the wire?.
+In this article, we will look at how to create structured log events for HTTP API request/response transactions in an ASP.NET Core Web API using the Serilog logger and the HTTP Logging Middleware provided by Microsoft.</description>
     </item>
   </channel>
 </rss>
