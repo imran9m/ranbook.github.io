@@ -6,8 +6,64 @@
     <description>Recent content in Tags on Ranbook Cloud</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jan 2025 17:52:55 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2025 17:55:55 -0400</lastBuildDate>
     <atom:link href="https://ranbook.cloud/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.Net</title>
+      <link>https://ranbook.cloud/tags/.net/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/.net/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Api</title>
+      <link>https://ranbook.cloud/tags/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/api/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aspdotnetcore</title>
+      <link>https://ranbook.cloud/tags/aspdotnetcore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/aspdotnetcore/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C#</title>
+      <link>https://ranbook.cloud/tags/c%23/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/c%23/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dotnet</title>
+      <link>https://ranbook.cloud/tags/dotnet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Http</title>
+      <link>https://ranbook.cloud/tags/http/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/http/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logging</title>
+      <link>https://ranbook.cloud/tags/logging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/logging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Serilog</title>
+      <link>https://ranbook.cloud/tags/serilog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ranbook.cloud/tags/serilog/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Beans</title>
       <link>https://ranbook.cloud/tags/beans/</link>

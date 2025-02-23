@@ -6,16 +6,15 @@
     <description>Recent content in .Net on Ranbook Cloud</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Aug 2024 17:27:06 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2025 17:55:55 -0400</lastBuildDate>
     <atom:link href="https://ranbook.cloud/tags/.net/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Gracefully Handle DotNetCore Docker Container Termination</title>
-      <link>https://ranbook.cloud/answers/dotnet-docker-graceful-termination/</link>
-      <pubDate>Sat, 17 Aug 2024 17:27:06 -0400</pubDate>
-      <guid>https://ranbook.cloud/answers/dotnet-docker-graceful-termination/</guid>
-      <description>Inorder to gracefully stop a .NET Core Docker Container, below is the sample console app code.
-using System; using System.Runtime.Loader; using System.Threading; namespace consoleapp { class Program { static void Main(string[] args) { var _quitEvent = new ManualResetEvent(false); AssemblyLoadContext.Default.Unloading += ctx =&amp;gt; { System.Console.WriteLine(&amp;#34;Unloding fired&amp;#34;); _quitEvent.Set(); }; System.Console.WriteLine(&amp;#34;Waiting for signals&amp;#34;); _quitEvent.WaitOne(); System.Console.WriteLine(&amp;#34;Received signal gracefully shutting down&amp;#34;); Console.WriteLine(&amp;#34;Hello World!&amp;#34;); } } } Sample Logs you should see for container.
-Waiting for signals Unloding fired Received signal gracefully shutting down Hello World!</description>
+      <title>ASP.NET Core WebAPI Payload Logging with Serilog</title>
+      <link>https://ranbook.cloud/posts/serilog-http-payload-logging/</link>
+      <pubDate>Sat, 22 Feb 2025 17:55:55 -0400</pubDate>
+      <guid>https://ranbook.cloud/posts/serilog-http-payload-logging/</guid>
+      <description>Goal: In this article, we will look at how to log HTTP API request/response payloads in an ASP.NET Core Web API using the Serilog logger and the HTTP Logging Middleware provided by Microsoft.
+Why: In some API-based applications, logging the payload for a given API transaction is helpful from both audit and monitoring perspectives. While it&amp;rsquo;s generally not recommended to log the request or response body due to performance considerations, if there is a need for such a requirement and you understand the risks, then hopefully this guide provides one of the many ways to achieve it.</description>
     </item>
   </channel>
 </rss>

@@ -6,8 +6,16 @@
     <description>Recent content on Ranbook Cloud</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jan 2025 17:52:55 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2025 17:55:55 -0400</lastBuildDate>
     <atom:link href="https://ranbook.cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ASP.NET Core WebAPI Payload Logging with Serilog</title>
+      <link>https://ranbook.cloud/posts/serilog-http-payload-logging/</link>
+      <pubDate>Sat, 22 Feb 2025 17:55:55 -0400</pubDate>
+      <guid>https://ranbook.cloud/posts/serilog-http-payload-logging/</guid>
+      <description>Goal: In this article, we will look at how to log HTTP API request/response payloads in an ASP.NET Core Web API using the Serilog logger and the HTTP Logging Middleware provided by Microsoft.
+Why: In some API-based applications, logging the payload for a given API transaction is helpful from both audit and monitoring perspectives. While it&amp;rsquo;s generally not recommended to log the request or response body due to performance considerations, if there is a need for such a requirement and you understand the risks, then hopefully this guide provides one of the many ways to achieve it.</description>
+    </item>
     <item>
       <title>Python SonarQube Code Coverage &amp; Quality</title>
       <link>https://ranbook.cloud/posts/python-sonarqube-coverage-tests/</link>

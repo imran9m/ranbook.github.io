@@ -29,6 +29,34 @@
         }
 
     </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
 </noscript>
   
     
@@ -63,6 +91,10 @@
 <body class="list" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -127,22 +159,23 @@
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://ranbook.cloud/img/pexels-souvenirpixels-3985485.jpg" alt="">
+</figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Gracefully Handle DotNetCore Docker Container Termination
+    <h2 class="entry-hint-parent">ASP.NET Core WebAPI Payload Logging with Serilog
     </h2>
   </header>
   <div class="entry-content">
-    <p>Inorder to gracefully stop a .NET Core Docker Container, below is the sample console app code.
-using System; using System.Runtime.Loader; using System.Threading; namespace consoleapp { class Program { static void Main(string[] args) { var _quitEvent = new ManualResetEvent(false); AssemblyLoadContext.Default.Unloading &#43;= ctx =&gt; { System.Console.WriteLine(&#34;Unloding fired&#34;); _quitEvent.Set(); }; System.Console.WriteLine(&#34;Waiting for signals&#34;); _quitEvent.WaitOne(); System.Console.WriteLine(&#34;Received signal gracefully shutting down&#34;); Console.WriteLine(&#34;Hello World!&#34;); } } } Sample Logs you should see for container.
-Waiting for signals Unloding fired Received signal gracefully shutting down Hello World!...</p>
+    <p>Goal: In this article, we will look at how to log HTTP API request/response payloads in an ASP.NET Core Web API using the Serilog logger and the HTTP Logging Middleware provided by Microsoft.
+Why: In some API-based applications, logging the payload for a given API transaction is helpful from both audit and monitoring perspectives. While it’s generally not recommended to log the request or response body due to performance considerations, if there is a need for such a requirement and you understand the risks, then hopefully this guide provides one of the many ways to achieve it....</p>
   </div>
-  <footer class="entry-footer"><span title='2024-08-17 17:27:06 -0400 EDT'>August 17, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Imran</footer>
-  <a class="entry-link" aria-label="post link to Gracefully Handle DotNetCore Docker Container Termination" href="https://ranbook.cloud/answers/dotnet-docker-graceful-termination/"></a>
+  <footer class="entry-footer"><span title='2025-02-22 17:55:55 -0400 -0400'>February 22, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Imran</footer>
+  <a class="entry-link" aria-label="post link to ASP.NET Core WebAPI Payload Logging with Serilog" href="https://ranbook.cloud/posts/serilog-http-payload-logging/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://ranbook.cloud/">Ranbook Cloud</a></span> · 
+        <span>&copy; 2025 <a href="https://ranbook.cloud/">Ranbook Cloud</a></span> · 
 
     <span>
         Powered by
